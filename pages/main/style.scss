@@ -60,6 +60,18 @@ ul {
   justify-content: space-between;
   li {
     list-style-type: none;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 160%;
+    color: #cdcdcd;
+    padding: 3px 0px;
+    span {
+      padding: 3px 0px;
+      border-bottom: solid 3px #f1cdb3;
+    }
     a {
       font-family: Arial;
       font-style: normal;
