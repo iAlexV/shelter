@@ -25,7 +25,12 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+.header_burger {
+  display: none;
+}
 .header_logo {
+  min-width: 186px;
+  margin-right: 10px;
 }
 .header_logotip {
   font-family: Georgia;
@@ -49,7 +54,8 @@ h3 {
 }
 .header_nav {
   // margin-top: -5px;
-  width: 36.9%;
+  width: 100%;
+  max-width: 443px;
   min-width: 385px;
   ul {
     display: flex;
@@ -98,10 +104,11 @@ h3 {
   color: #545454;
 }
 .main_cards {
+  width: 100%;
   margin-top: 60px;
   display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 270px);
   grid-template-rows: 1fr 1fr;
   gap: 30px 40px;
 }
@@ -308,4 +315,235 @@ h3 {
       color: #f1cdb3;
     }
   }
+}
+
+@media (max-width: 1100px) {
+  /* Header start */
+  .header {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+
+  /* Header end */
+
+  /* Main Start */
+  .main {
+    padding: 80px 40px 76px 40px;
+  }
+  .main_cards {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .main_cards__card:nth-child(7) {
+    display: none;
+  }
+  .main_cards__card:nth-child(8) {
+    display: none;
+  }
+  .main_buttons {
+    margin-top: 40px;
+  }
+
+  /* Main end */
+
+  /* Footer stat */
+
+  .footer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 768px;
+    width: 100%;
+    padding: 0px 40px;
+    column-gap: 58px;
+    row-gap: 22px;
+    &_bg {
+      // height: 639px;
+    }
+
+    &_left {
+      margin-top: 30px;
+    }
+
+    &_center {
+      margin-top: 30px;
+    }
+
+    &_right {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .footer_left {
+    &__logo {
+      font-family: Georgia;
+      font-size: 35px;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+    }
+
+    &__mail {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+        font-family: Georgia;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+      }
+    }
+
+    &__phone {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+        font-family: Georgia;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+      }
+    }
+  }
+  .footer_center {
+    &__logo {
+      font-family: Georgia;
+      font-size: 35px;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+    }
+
+    &__street {
+      margin-top: 35px;
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+        font-family: Georgia;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+      }
+    }
+
+    &__adres {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 20px;
+        font-family: Georgia;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+      }
+    }
+  }
+
+  /* Footer end */
+}
+@media (max-width: 640px) {
+  .header {
+    min-width: 278px;
+  }
+  .header_nav {
+    display: none;
+  }
+  .header_burger {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 0 0 0 10px;
+    margin: 0;
+    width: 80%;
+    min-width: 268px;
+  }
+  .main {
+    padding: 42px 10px 50px 10px;
+  }
+  .main_logo {
+    max-width: 300px;
+    font-family: Georgia;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+  .main_cards {
+    width: 100%;
+    margin-top: 42px;
+  }
+  .main_cards__card:nth-child(4) {
+    display: none;
+  }
+  .main_cards__card:nth-child(5) {
+    display: none;
+  }
+  .main_cards__card:nth-child(6) {
+    display: none;
+  }
+  /* Footer*/
+
+  .footer {
+    max-width: 320px;
+    width: 100%;
+    padding: 0px 10px;
+    column-gap: 58px;
+    row-gap: 22px;
+  }
+  .footer_left__logo {
+    font-size: 25px;
+    text-align: center;
+  }
+  .footer_left {
+    margin: auto;
+    margin-top: 25px;
+  }
+  .footer_left__mail {
+    justify-content: center;
+  }
+  .footer_left__phone {
+    justify-content: center;
+  }
+  .footer_center {
+    margin-top: 15px;
+  }
+  .footer_center__logo {
+    max-width: 294px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 3px;
+  }
+  .footer_center__street {
+    margin-top: 40px;
+  }
+  .footer_center__adres {
+    margin-top: 37px;
+  }
+  .footer_right {
+    margin-top: 17px;
+    max-width: 260px;
+  }
+  .footer_right__img {
+    width: 100%;
+    height: 100%;
+    max-width: 260px;
+  }
+  /* Footer*/
 }
