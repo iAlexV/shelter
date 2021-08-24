@@ -36,11 +36,12 @@ if (isMobile.any()) {
 // Бургер
 
 const burgerMenu = document.querySelector('.header_burger');
+const bodyMenu = document.querySelector('.header_nav');
+const headerLogo = document.querySelector('.header_logo');
+const header = document.querySelector('.header');
+const shadow = document.querySelector('.shadow');
 if (burgerMenu) {
-  const bodyMenu = document.querySelector('.header_nav');
-  const headerLogo = document.querySelector('.header_logo');
-  const header = document.querySelector('.header');
-  const shadow = document.querySelector('.shadow');
+
   burgerMenu.addEventListener('click', function (e) {
     document.body.classList.toggle('_lock');
     burgerMenu.classList.toggle('_active');
@@ -73,6 +74,15 @@ if (menuLink.length > 0) {
     if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight;
+
+      if (burgerMenu.classList.contains('_active')) {
+        document.body.classList.remove('_lock');
+        burgerMenu.classList.remove('_active');
+        bodyMenu.classList.remove('_active');
+        headerLogo.classList.remove('_active');
+        header.classList.remove('_active');
+        shadow.classList.remove('_active');
+      }
 
       window.scrollTo({
         top: gotoBlockValue,
