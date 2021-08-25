@@ -19,18 +19,17 @@
         <p class="text">Shelter for pets in Boston</p>
       </div>
       <div class="header_burger">
-        <img src="assets/Burger.svg" alt="Burger">
+        <!-- <img src="assets/Burger.svg" alt="Burger"> -->
+        <span></span>
       </div>
-      <div class="header_nav">
-        <nav>
-          <ul>
-            <li><span>About the shelter</span></li>
-            <li><a href="https://ialexv.github.io/shelter/pages/pets/">Our pets</a></li>
-            <li><a href="">Help the shelter</a></li>
-            <li><a href="">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="header_nav">
+        <ul class="menu_list">
+          <li><span>About the shelter</span></li>
+          <li><a href="https://ialexv.github.io/shelter/pages/pets/">Our pets</a></li>
+          <li><a class="header_link" data-goto=".help" href="#">Help the shelter</a></li>
+          <li><a class="header_link" data-goto=".footer" href="#">Contacts</a></li>
+        </ul>
+      </nav>
 
     </header>
 
@@ -40,7 +39,7 @@
         <p class="left_text">We offer to give a chance to a little and nice puppy with an extremely wide and open
           heart.
           He or she will love you more than anybody else in the world, you will see!</p>
-        <a href="" class="button">Make a friend</a>
+        <a href="https://ialexv.github.io/shelter/pages/pets/" class="button">Make a friend</a>
       </div>
       <div class="main_right">
         <img class="right_img" src="assets/start-screen-puppy.png" alt="puppy">
@@ -251,8 +250,8 @@
     </div>
 
   </footer>
-
-
+  <div class="shadow"></div>
+  <script src="script.js"></script>
 </body>
 
 </html>
