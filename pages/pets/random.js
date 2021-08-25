@@ -14,13 +14,57 @@ function cardCreate(id) {
   let cardDiv = document.createElement('div');
   cardDiv.className = 'main_cards__card';
   cardDiv.innerHTML =
-    `<img src="assets/pets-${id}.png" alt="${id}" class="card_img">
-  <div class="card_name">${id}</div>
+    `<img src="${id.imgSrc}" alt="${id.alt}" class="card_img">
+  <div class="card_name">${id.text}</div>
   <div class="card_button">Learn more</div>`
   document.querySelector('.main_cards').appendChild(cardDiv);
 }
 
-let arr1 = ['Katrine', 'Jennifer', 'Woody', 'Sophia', 'Timmy', 'Charly', 'Scarlett', 'Freddie'];
+let arr1 = [
+  Katrine = {
+    imgSrc: "assets/pets-katrine.png",
+    alt: "Katrine",
+    text: "Katrine"
+  },
+  Jennifer = {
+    imgSrc: "assets/pets-jennifer.png",
+    alt: "Jennifer",
+    text: "Jennifer"
+  },
+  Woody = {
+    imgSrc: "assets/pets-woody.png",
+    alt: "Woody",
+    text: "Woody"
+  },
+  Sophia = {
+    imgSrc: "assets/pets-sophia.png",
+    alt: "Sophia",
+    text: "Sophia"
+  },
+  Timmy = {
+    imgSrc: "assets/pets-timmy.png",
+    alt: "Timmy",
+    text: "Timmy"
+  },
+  Charly = {
+    imgSrc: "assets/pets-charly.png",
+    alt: "Charly",
+    text: "Charly"
+  },
+  Scarlett = {
+    imgSrc: "assets/pets-scarlett.png",
+    alt: "Scarlett",
+    text: "Scarlett"
+  },
+  Freddie = {
+    imgSrc: "assets/pets-freddie.png",
+    alt: "Freddie",
+    text: "Freddie"
+  },
+]
+
+// let arr = ['Katrine', 'Jennifer', 'Woody', 'Sophia', 'Timmy', 'Charly', 'Scarlett', 'Freddie'];
+
 let countCards;
 if (window.innerWidth > 1299) {
   countCards = 8;
