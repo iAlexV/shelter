@@ -45,11 +45,6 @@
   z-index: 20;
 }
 
-.pet_info-exit:hover {
-  border: none;
-  background-color: #fddcc4;
-}
-
 .shadow_popup:hover .pet_info-exit {
   border: none;
   background-color: #fddcc4;
@@ -176,6 +171,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .pet_info-exit:hover {

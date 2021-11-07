@@ -12,12 +12,38 @@ h3 {
   font-style: normal;
   font-weight: normal;
 }
+a:active,
+a:focus {
+  outline: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+input:active,
+textarea:active {
+  outline: none;
+}
+:focus {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+textarea {
+  resize: vertical;
+}
+textarea {
+  resize: horizontal;
+}
 body._lock {
   overflow: hidden;
 }
 .shadow {
-  display: none;
+  // display: none;
 }
+
 .header_bg {
   position: sticky;
   top: 0;
@@ -26,7 +52,6 @@ body._lock {
 }
 .header {
   margin: auto;
-
   width: 100%;
   max-width: 1280px;
   height: 120px;
@@ -132,6 +157,7 @@ body._lock {
   flex-direction: column;
   align-items: center;
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 .main_cards__card:hover {
   background: #fff;

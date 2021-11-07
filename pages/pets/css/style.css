@@ -218,6 +218,7 @@ body._lock {
           align-items: center;
   -webkit-transition: all ease 0.2s;
   transition: all ease 0.2s;
+  cursor: pointer;
 }
 
 .main_cards__card:hover {
