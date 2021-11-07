@@ -16,12 +16,39 @@ h3 {
   font-weight: normal;
 }
 
-body._lock {
-  overflow: hidden;
+a:active,
+a:focus {
+  outline: none;
 }
 
-.shadow {
-  display: none;
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
+body._lock {
+  overflow: hidden;
 }
 
 .header_bg {
